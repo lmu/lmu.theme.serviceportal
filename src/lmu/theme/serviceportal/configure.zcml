@@ -10,9 +10,9 @@
 
   <genericsetup:registerProfile
       name="default"
-      title="LMU Theme for ZUV-Intranet"
+      title="LMU Theme for ZUV-Serviceportal"
       directory="profiles/default"
-      description="Extension profile for LMU Theme for ZUV-Intranet"
+      description="Extension profile for LMU Theme for ZUV-Serviceportal"
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 
