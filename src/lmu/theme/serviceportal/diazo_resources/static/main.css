@@ -1,0 +1,314 @@
+/* Stylesheet for the 'ICustomTheme' Plone browser layer */
+
+main#content {
+    margin-top: 2em;
+    margin-bottom: 1.5em;
+}
+
+#blog-section a {
+    color: #009440;
+}
+
+#blog-section a:hover,
+#blog-section a:active,
+#blog-section a:focus {
+    color: #007f37;
+    text-decoration: underline;
+}
+
+#blog-section a:hover *,
+#blog-section a:active *,
+#blog-section a:focus * {
+    color: #007f37;
+}
+
+h2.header-category small {
+    font-size: 100%;
+}
+
+.portaltype-blog-entry h1 {
+    margin-top: 0px;
+    line-height: 100%;
+}
+
+#blog-main > .row:first-child > section {
+    background-image: url('img/bg-overview-column.png');
+    background-position: 2.1875rem top;
+    background-repeat: no-repeat;
+    background-size: 17px 9px;
+    padding-top: 1em;
+}
+
+a.comment-sign {
+    display: block;
+    background-image: url('img/bg-comment.png');
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: 5px bottom;
+    background-size: 5px 5px;
+    margin-left: 10px;
+    padding-bottom: 5px;
+    float: right;
+    text-align: center;
+    min-width: 50px;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 120%;
+}
+
+.comment-sign span {
+    background-color: #007f37;
+    display: block;
+    padding: 5px;
+    border: 3px solid #007f37;
+    border-radius: 2px;
+}
+
+#blog-main a.comment-sign,
+.portaltype-blog-entry a.comment-sign {
+    color: #FFF;
+}
+
+#blog-main a.comment-sign:hover *,
+#blog-main a.comment-sign:focus *,
+.portaltype-blog-entry a.comment-sign:hover *,
+.portaltype-blog-entry a.comment-sign:focus * {
+    color: #FFF;
+    text-decoration: underline;
+}
+
+.blog-entry p {
+    text-align: justify;
+}
+
+.template-blog_folder-frontpage_view #blog-main .tileItem {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-bottom-style: solid;
+    border-bottom-color: #008b45;
+    border-bottom-width: 1px;
+    margin-bottom: 1em;
+}
+
+
+.template-blog_folder-frontpage_view #blog-main .tileItem.lastTileItem {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    border-bottom: none;
+}
+
+.portaltype-blog-folder.template-listing_view #blog-main section.tileItem {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.portaltype-blog-folder.template-listing_view #blog-main section.tileItem .tileBody {
+    border-bottom-style: solid;
+    border-bottom-color: #008b45;
+    border-bottom-width: 1px;
+}
+
+.portaltype-blog-folder.template-listing_view #blog-main section.tileItem.lastTileItem .tileBody {
+    border-bottom: none;
+}
+
+/*
+section.imageTileItem {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+
+section.imageTileItem > .row.tileImage {
+    margin-right: 0;
+    margin-left: 0;
+}
+*/
+
+#blog-main * {
+    color #000;
+}
+
+
+.portaltype-blog-folder .documentByLine,
+.portaltype-blog-entry .documentByLine {
+    margin-bottom: 0.5em;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.portaltype-blog-folder figure,
+.portaltype-blog-entry figure {
+    float: left;
+    margin-right: 1em;
+    margin-bottom: 0.5em;
+    max-width: 250px;
+}
+
+.template-blog_folder-frontpage_view figure.columns,
+.template-blog_folder-frontpage_view figure.column {
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+figure figcaption {
+    background-color: rgba(0,0,0,0.5);
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    color: #FFF;
+}
+
+figure a {
+    display: block;
+}
+
+.commentDate {
+    display: inline;
+    font-size: 100%;
+}
+
+
+#blog-main h3 {
+    margin-top: 0;
+    padding : 0;
+    line-height: 100%;
+}
+
+#blog-footer {
+    padding-top: 10px;
+    padding-bottom: 10px; 
+}
+
+#blog-footer * {
+    font-size: 12px;
+}
+
+#blog-header a.button,
+#blog-footer a.button {
+    display: block;
+    width: 100%;
+    background-color: transparent;
+    color: #008b45;
+    border-color: #008b45;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.portaltype-blog-entry main .button,
+.portaltype-blog-entry main button {
+    background-color: transparent;
+    color: #008b45;
+    border-color: #008b45;
+    border-width: 1px;
+    border-style: solid;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.portaltype-blog-entry main .button:hover,
+.portaltype-blog-entry main button:hover,
+.portaltype-blog-entry main .button:focus,
+.portaltype-blog-entry main button:focus {
+    background-color: #008b45;
+    color: #FFF;
+    border-color: #008b45;
+    border-width: 1px;
+    border-style: solid;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.fieldTextFormat,
+#formfield-form-widgets-IVersionable-changeNote {
+    display: none;
+}
+#formfield-form-widgets-ILeadImage-image {
+    margin-top: 0.5em;
+}
+
+
+.commentImage img {
+    height: 32px;
+}
+
+.row #commenting fieldset, .row .discussion fieldset {
+    border-color: #008b45;
+}
+
+.visualClear {
+    clear: both;
+    margin-bottom: 1em;
+}
+
+.hiddenStructure {
+    color: transparent;
+}
+
+dl.portalMessage, div.attention, div.caution, div.danger, div.error, div.hint, div.important, div.note, div.tip, div.warning {
+    background-color: #ffffe3;
+    border: 1px solid #996;
+    clear: both;
+    font-size: 80%;
+    margin: 1em 0;
+}
+dl.portalMessage a, #content dl.portalMessage a, div.attention a, div.caution a, div.danger a, div.error a, div.hint a, div.important a, div.note a, div.tip a, div.warning a, #content div.attention a, #content div.caution a, #content div.danger a, #content div.error a, #content div.hint a, #content div.important a, #content div.note a, #content div.tip a, #content div.warning a {
+    border-bottom: 1px solid #888;
+    color: black;
+}
+dl.portalMessage dt, div > .admonition-title {
+    background-color: #996;
+    color: White;
+    float: left;
+    font-weight: bold;
+    line-height: 1.25em;
+    margin: 0 0.5em 0 0;
+    padding: 0.5em 0.75em;
+}
+dl.portalMessage dd, div.attention > .last, div.caution > .last, div.danger > .last, div.error > .last, div.hint > .last, div.important > .last, div.note > .last, div.tip > .last, div.warning > .last {
+    line-height: 1.25em;
+    margin: 0;
+    padding: 0.5em;
+}
+dl.warning {
+    border-color: #d80;
+}
+dl.warning > dt, .warning > .admonition-title {
+    background-color: #d80;
+}
+dl.error {
+    border-color: red;
+}
+dl.error > dt, .error > .admonition-title {
+    background-color: #d00;
+}
+.warning > dd, .warning > .last {
+    background-color: #fd7;
+}
+.error > dd, .error > .last {
+    background-color: #fdc;
+}
+#content dl.portalMessage, #content div.attention a, #content div.caution a, #content div.danger a, #content div.error a, #content div.hint a, #content div.important a, #content div.note a, #content div.tip a, #content div.warning a {
+    font-size: 100%;
+}
+#content dl.portalMessage dt, #content div > .admonition-title {
+    margin: 0 0.5em 0 0;
+    padding: 0.5em 0.75em;
+}
+#content dl.portalMessage dd, #content div.attention > .last, #content div.caution > .last, #content div.danger > .last, #content div.error > .last, #content div.hint > .last, #content div.important > .last, #content div.note > .last, #content div.tip > .last, #content div.warning > .last {
+    margin: 0;
+}

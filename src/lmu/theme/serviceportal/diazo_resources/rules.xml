@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules
+    xmlns="http://namespaces.plone.org/diazo"
+    xmlns:css="http://namespaces.plone.org/diazo/css"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+    <!-- Apply the following rules to standard Plone pages -->
+    <rules css:if-content="#visual-portal-wrapper">
+
+        <!--
+        <theme href="https://iukintest.zuv.uni-muenchen.de/index.html" />
+        -->
+        <rules if="$readnetwork">
+            <!--<theme href="https://iuksptest.verwaltung.uni-muenchen.de/_assets/index.html" if="$readnetwork"/>-->
+        </rules>
+        <theme href="theme.html" if-not="$readnetwork" />
+        <notheme if="$ajax_load" />
+        <notheme if-path="/Plone/frontpage_view" />
+
+        <!-- Replace title with Plone's page title  -->
+        <replace css:theme="html head title" css:content="html head title" />
+
+        <!-- Copy base tag from Plone -->
+        <before css:theme-children="html head" css:content="html head base" />
+        <before css:theme-children="html head"
+               content="/html/head/link | /html/head/script | /html/head/style" />
+        <!-- Copy link, style, meta tags from Plone head -->
+        <!--<after css:theme-children="html head"
+               content="/html/head/link | /html/head/style | /html/head/meta" />-->
+        <after css:theme-children="html head"
+               content="/html/head/meta" />
+
+        <!-- merge classes from Plone body with theme body -->
+        <merge attributes="class" css:theme="body" css:content="body" />
+
+        <!-- Copy script tags from Plone head to end of body -->
+        <!--<after css:theme-children="html body" css:content="html head script" />-->
+
+        <!-- Move inline scripts in content to end of body -->
+        <!--<drop css:content="body script" />-->
+        <!--<after css:theme-children="html body" css:content="html body script" method="raw" />-->
+
+        <!-- Insert your own rules here -->
+
+        <drop css:theme="#fake-above-content" if-not-path="/Plone/startseite" />
+        <drop css:theme="#fake-below-content" if-not-path="/Plone/startseite" />
+
+        <replace css:theme="#content-core" css:content="#blog-section" href="http://127.0.0.1:8080/Plone/blog-mit/frontpage_view" if-path="/Plone/startseite" />
+        <replace css:theme="#content" css:content-children="#content" if-not-path="/Plone/startseite"/>
+
+        <before css:theme="#content" css:content=".portalMessage" />
+        
+        <replace css:theme-children='#portal_username' css:content-children="#user-name" />
+
+        <drop css:content="#breadcrumbs-you-are-here" />
+        <drop css:content=".breadcrumbSeparator" />
+        <replace css:theme-children=".sp-breadcrumb" css:content-children="#portal-breadcrumbs" />
+        <strip css:content="#breadcrumbs-current" />
+        
+    </rules>
+
+</rules>
