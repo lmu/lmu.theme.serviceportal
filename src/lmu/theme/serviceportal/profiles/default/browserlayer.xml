@@ -3,6 +3,6 @@
      so that it will be activated
      when this product is installed. -->
 <layers>
-    <layer name="lmu.theme.serviceportal.intranet_layer"
-      interface="lmu.theme.serviceportal.interfaces.ILMUIntranetTheme" />
+    <layer name="lmu.theme.serviceportal.servcieportal_layer"
+           interface="lmu.theme.serviceportal.interfaces.ILMUServiceportalTheme" />
 </layers>

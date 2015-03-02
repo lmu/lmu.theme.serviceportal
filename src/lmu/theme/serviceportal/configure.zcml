@@ -17,13 +17,13 @@
       />
 
   <plone:static
-    directory="diazo_resources"
-    type="theme"
-    />
+      directory="diazo_resources"
+      type="theme"
+      />
 
   <browser:jbot
       directory="template_overrides"
-      layer=".interfaces.ILMUIntranetTheme"
+      layer=".interfaces.ILMUServiceportalTheme"
       />
 
 </configure>
