@@ -35,7 +35,7 @@
         <drop css:theme="#fake-below-content" if-not-path="/Plone/startseite" />
 
         <replace css:theme="#content-core" css:content="#blog-section" href="http://127.0.0.1:8080/Plone/blog-mit/frontpage_view" if-path="/Plone/startseite" />
-        <replace css:theme="#content" css:content-children="#content" if-not-path="/Plone/startseite"/>
+        <replace css:theme="#content" css:content="#content" if-not-path="/Plone/startseite"/>
 
         <before css:theme="#content" css:content=".portalMessage" />
         
