@@ -27,12 +27,12 @@ setup(name='lmu.theme.serviceportal',
       zip_safe=False,
       install_requires=[
           'setuptools',
-          'z3c.jbot',
           # -*- Extra requirements: -*-
+          'z3c.jbot',
       ],
       entry_points="""
       # -*- Entry points: -*-
       [z3c.autoinclude.plugin]
-      target = plone
+      target = lmu
       """,
       )
