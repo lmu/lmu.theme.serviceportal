@@ -33,6 +33,6 @@ setup(name='lmu.theme.serviceportal',
       entry_points="""
       # -*- Entry points: -*-
       [z3c.autoinclude.plugin]
-      target = lmu
+      target = plone
       """,
       )
