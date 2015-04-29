@@ -17,6 +17,7 @@
         />
 
     <plone:static
+        name="lmu.theme.serviceportal"
         directory="diazo_resources"
         type="theme"
         />

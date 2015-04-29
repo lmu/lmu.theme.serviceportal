@@ -7,9 +7,7 @@
     <!-- Apply the following rules to standard Plone pages -->
     <rules css:if-content="#visual-portal-wrapper">
 <!--
-        <theme href="https://iukintest.verwaltung.uni-muenchen.de/_assets/index.html" if="$domain = 'iukintest.verwaltung.uni-muenchen.de'" />
-        
-        <theme href="https://iuksptest.verwaltung.uni-muenchen.de/_assets/index.html" if="$domain = 'iuksptest.verwaltung.uni-muenchen.de'" />
+        <theme href="https://iuksptest.verwaltung.uni-muenchen.de/_assets/index.html" />
 -->
         <theme href="theme.html" /> 
         <notheme if="$ajax_load" />
@@ -21,17 +19,18 @@
         <replace css:theme="html head title" css:content="html head title" />
 
         <!-- Copy base tag from Plone -->
-        <before css:theme-children="html head" css:content="html head base" />
-        <before css:theme-children="html head"
+        <before css:theme-children="html head title" css:content="html head base" />
+        <before css:theme-children="html head title"
                content="/html/head/link | /html/head/script | /html/head/style" />
         <!-- Copy link, style, meta tags from Plone head -->
         <!--<after css:theme-children="html head"
                content="/html/head/link | /html/head/style | /html/head/meta" />-->
-        <after css:theme-children="html head"
-               content="/html/head/meta" />
+        <before css:theme-children="html head" content="/html/head/meta" />
+        <drop css:theme="html head meta[name=generator]" />
 
         <!-- merge classes from Plone body with theme body -->
-        <merge attributes="class" css:theme="body" css:content="body" />
+        <merge attributes="class" theme="/html/body" content="/html/body" />
+        <replace attributes="lang" theme="/html" content="/html" />
 
         <!-- Copy script tags from Plone head to end of body -->
         <!--<after css:theme-children="html body" css:content="html head script" />-->
