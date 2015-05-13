@@ -30,13 +30,13 @@
     <browser:resourceDirectory
         name="lmu.theme.serviceportal.css"
         directory="css"
-        layer=".interfaces.ILMUIntranetTheme"
+        layer=".interfaces.ILMUServiceportalTheme"
         />
 
     <browser:resourceDirectory
         name="lmu.theme.serviceportal.js"
         directory="js"
-        layer=".interfaces.ILMUIntranetTheme"
+        layer=".interfaces.ILMUServiceportalTheme"
         />
 
 </configure>
