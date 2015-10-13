@@ -41,6 +41,7 @@
         <replace css:theme="#content" css:content="#content" />
         <replace css:theme="#portalmessage" css:content=".portalMessage" />
         
+        <replace css:theme-children="#siteheader-person" css:content-children="#user" href="/user_info.include" method="document" />
         <replace css:theme-children=".siteheader-name" css:content-children="#user-name" />
 
         <drop css:content="#breadcrumbs-you-are-here" />
