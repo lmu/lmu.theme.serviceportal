@@ -1,10 +1,11 @@
-
 <!doctype html>
-<html class="no-js" lang="en">
-    <head>
+<html class="no-js"
+      lang="de"
+      xmlns:esi="http://www.edge-delivery.org/esi/1.0">
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Infopark CMS Fiona; 6.9.0; 53616c7465645f5fb14a315e7e8b33048d3c428086aedb09">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">    
     <title>ZUV Serviceportal</title>
     <link rel="stylesheet" href="https://cms-static.uni-muenchen.de/default/foundation-zuv/fonts/opensans_regular/stylesheet.css" type="text/css" charset="utf-8">
     <link rel="stylesheet" href="https://cms-static.uni-muenchen.de/default/foundation-zuv/fonts/opensans_italic/stylesheet.css" type="text/css" charset="utf-8">
@@ -14,204 +15,143 @@
     <link rel="stylesheet" href="https://cms-static.uni-muenchen.de/default/foundation-zuv/fonts/opensans_semibolditalic/stylesheet.css" type="text/css" charset="utf-8">
     <link rel="stylesheet" href="https://cms-static.uni-muenchen.de/default/foundation-zuv/fonts/foundation-icons/foundation-icons.css" type="text/css" charset="utf-8">
     <link rel="stylesheet" href="https://cms-static.uni-muenchen.de/default/foundation-zuv/fonts/noto-serif/noto-serif.css" type="text/css" charset="utf-8">
-    <!-- If you are using the gem version, you need this only -->
     <link rel="stylesheet" href="https://cms-static.uni-muenchen.de/default/foundation-zuv/css/foundation/app.css">
-    <link type="text/css" href="https://www.serviceportal.verwaltung.uni-muenchen.de/portal_css/++resource++lmu.theme.serviceportal.css/extras.css" rel="stylesheet">
-    </head>
-    <body>
-        <div class="container">
-                <header id="header">
-    <!-- TOPBAR -->
-<div class="row font-white siteheader-container">
-    <div class="small-9 medium-7 large-7 large-offset-1 columns siteheader siteheader-logo">
-        <a href="/index.html" title="Serviceportal der ZUV"><img src="https://cms-static.uni-muenchen.de/default/foundation-zuv/img/header-smartphone.png" class="helper-no-resize hide-for-medium-up logo-small" alt="header-smartphone"></a>
-    </div>
-    <div class="small-3 medium-5 large-3 end columns siteheader">
-        <a id="siteheader-person" data-dropdown="drop1" class="button dropdown tiny right">
-            <span style="font-size: 12px;" class="fi-torso"></span>
-            <span class="siteheader-name helper-margin-left-s">Sie sind nicht angemeldet</span>
-        </a> 
-    <ul id="drop1" data-dropdown-content class="f-dropdown">
-        <li><a href="/index">Benutzerkonto</a></li>
-        <li><a href="/index.html">Logout</a></li>
-    </ul>    
-
-
-    </div>
-</div>
-    <!-- NAVIGATION -->
-<div class="row mainnav-container">
-    <div class="small-12 large-10 large-centered columns">
-        <div class="search-nav right">
-            <span class="search" id="togglesearch" title="Suche"><i class="fi-magnifying-glass"></i></span>
+</head>
+<body>
+<div class="container">
+    <header id="header">
+        <!-- TOPBAR -->
+        <div class="row font-white siteheader-container">
+            <div class="small-9 medium-7 large-7 large-offset-1 columns siteheader siteheader-logo">
+                <a href="/index.html" title="Serviceportal der ZUV"><img src="https://cms-static.uni-muenchen.de/default/foundation-zuv/img/header-smartphone.png" class="helper-no-resize hide-for-medium-up logo-small" alt="header-smartphone"></a>
+            </div>
+            <div class="small-3 medium-5 large-3 end columns siteheader">
+                <a id="siteheader-person" href="/index.html" data-dropdown="drop1" class="button dropdown tiny right">
+                    <span style="font-size: 12px;" class="fi-torso"></span>
+                    <span class="siteheader-name helper-margin-left-s">Sie sind nicht angemeldet</span>
+                </a>
+                <ul id="drop1" data-dropdown-content class="f-dropdown">
+                    <li><a href="https://www.portal.uni-muenchen.de/benutzerkonto/index.html">Benutzerkonto</a></li>
+                    <li><a href="/servlet/LogoutServlet">Logout</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="nav-container right hide-for-large-up">
-            <span class="toggle" id="togglenav" title="Navigation"><i class="fi-list"></i></span>
-        </div>
-        <div style="margin-right: 3%;">
-        <nav class="top-bar mainnav" data-topbar>
-        <ul class="title-area">
-            <li class="name">
-            <a href="/index.html" title="Serviceportal der ZUV"><img src="https://cms-static.uni-muenchen.de/default/foundation-zuv/img/header-desktop.png" class="no-resize show-for-medium-up" alt="header-desktop"></a>
-            <h1 class="mainnav-title"><a>Serviceportal<br>der ZUV</a></h1>
-            </li>
-        </ul>
-        <section class="top-bar-section">
-            <!-- Hauptnavigationspunkte aus zuv_startseite_hauptnavigation -->
-                    <ul class="right">
-                            <li>
-                                <a href="/aktuelles/index.html" title="Aktuell">
-                                        Aktuell
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/services/index.html" title="Services">
-                                        Services
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/die-zuv/index.html" title="Die ZUV">
-                                        Die ZUV
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/weiterbildung/index.html" title="Weiterbildung">
-                                        Weiterbildung
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/meine-angebote/index.html" title="Meine Angebote">
-                                        Meine Angebote
-                                </a>
-                            </li>
+        <!-- NAVIGATION -->
+        <div class="row mainnav-container">
+            <div class="small-12 large-10 large-centered columns">
+                <div class="search-nav right active">
+                <span class="search" id="togglesearch" title="Suche"><i class="fi-magnifying-glass"></i></span>
+            </div>
+            <div class="nav-container right hide-for-large-up">
+                <span class="toggle" id="togglenav" title="Navigation"><i class="fi-list"></i></span>
+            </div>
+            <div style="margin-right: 3%;">
+                <nav class="top-bar mainnav" data-topbar>
+                    <ul class="title-area">
+                        <li class="name">
+                        <a href="/index.html" title="Serviceportal der ZUV">
+                            <img src="https://cms-static.uni-muenchen.de/default/foundation-zuv/img/header-desktop.png" class="no-resize show-for-medium-up" alt="header-desktop">
+                        </a>
+                        <h1 class="mainnav-title"><a>Serviceportal<br>der ZUV</a></h1>
+                        </li>
                     </ul>
-        </section>
-        </nav>
+                    <esi:include src="/_include/top-bar-section.html" />
+                    <esi:remove >
+                        <section class="top-bar-section">
+                            <!-- Hauptnavigationspunkte aus zuv_startseite_hauptnavigation -->
+                                    <ul class="right">
+                                            <li>
+                                                <a href="/aktuelles/index.html" title="Aktuell">
+                                                        Aktuell
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/services/index.html" title="Services">
+                                                        Services
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/die-zuv/index.html" title="Die ZUV">
+                                                        Die ZUV
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/weiterbildung/index.html" title="Weiterbildung">
+                                                        Weiterbildung
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/meine-angebote/index.html" title="Meine Angebote">
+                                                        Meine Angebote
+                                                </a>
+                                            </li>
+                                    </ul>
+                        </section>
+                    </esi:remove>
+                </nav>
+            </div>
         </div>
     </div>
-</div>
 <!-- / NAVIGATION -->
 </header>
 <div style="position: relative;">
-    <div style="height: 50px !important; overflow: hidden">
- <form action="/search" id="livesearch0">
-    <div class="row font-white search-container">
-        <div class=" small-12 large-10 large-centered columns search-form">
-            <input id="quicksearch" type="text" name="SearchableText" type="text" placeholder="Wonach suchen Sie?">
-            <a href="/index.html" class="button postfix " title="Serviceportal der ZUV"><i class="fi-magnifying-glass"></i></a>
+    <div id="sb-container" >
+        <form action="/search" id="livesearch0">
+            <div id="search-container" class="row font-white search-container" style="display: block; position: relative;">
+                <div class=" small-12 large-10 large-centered columns search-form">
+                        <input id="quicksearch" type="text" name="SearchableText" placeholder="Was können wir für Sie tun?">
+                    <a href="/index.html" class="button postfix " title="Serviceportal der ZUV"><i class="fi-magnifying-glass"></i></a>
+                </div>
+            </div>
+            <div class="row LSResult hide" id="LSResult">
+                <!-- LIVESEARCH -->
+                <div class="large-10 large-offset-1 search-live">
+                    <div class="LSShadow" id="LSShadow"></div>
+                </div>
+                <!-- /LIVESEARCH -->
+            </div>
+        </form>
+        <div id="breadcrumb-container" class="row font-white breadcrumb-container">
+            <div class="small-12 large-10 large-centered columns breadcrumb">
+                <a href="/index.html" title="Serviceportal der ZUV"><i class="fi-home"></i></a>
+            </div>
         </div>
     </div>
-    <div class="row LSResult hide" id="LSResult">
-        <!-- LIVESEARCH -->
-        <div class="large-10 large-offset-1 search-live">
-            <div class="LSShadow" id="LSShadow"></div>
-        </div>
-        <!-- /LIVESEARCH -->
-    </div>
- </form>
-<div class="row font-white breadcrumb-container">
-    <div class="small-12 large-10 large-centered columns breadcrumb">
-        <a href="/index.html" title="Serviceportal der ZUV"><i class="fi-home"></i></a>
+</div>
+
+<div id="portalmessagecontainer" class="row hide">
+    <div id="portalmessage" class="small-12 large-10 large-centered columns helper-margin-top-l">
+        <div data-alert class="alert-box"></div>
     </div>
 </div>
-    </div>
-</div>
+
 <main id="content">
-    <div id="portalmessagecontainer" class="row hide">
-        <div id="portalmessage" class="small-12 large-10 large-centered columns helper-margin-top-l">
-            <div data-alert class="alert-box"></div>
-        </div>
-    </div>
-        Layout fehlt: t3_content_zuv_assets_container
+    Content
 </main>
+
 <footer id="footer">
-    <!-- FOOTER -->
-<!-- Localizevariablen -->
-<h2 class="hide">Footer</h2>
-<div class="row footer helper-margin-top-xl">
-    <div class="small-12 large-10 large-centered columns">
-        <div class="row helper-margin-bottom-l" data-equalizer>
-            <!-- Hilfe -->
-            <div class="medium-12 large-4 columns helper-margin-top-l">
-                <h2 class="header-category">Hier finden Sie Hilfe</h2>
-                <div class="panel" data-equalizer-watch>
-                    <ul class="list-link">
-                                <li>
-                                    <a href="https://www.schadensmeldung.verwaltung.uni-muenchen.de" target="_blank" title="Störungserfassung im Bereich der Liegenschaften der LMU - Melden Sie uns mögliche Schäden ganz einfach online">
-                                        Störungserfassung im Bereich der Liegenschaften der LMU - Melden Sie uns mögliche Schäden ganz einfach online
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="http://helpdesk.campus.lmu.de/index.html" target="_blank" title="Campus-LMU-Helpdesk - Melden Sie sich bei allen Fragen zur Campus-LMU-Benutzerkennung und dem WLAN-Angebot der LMU">
-                                        Campus-LMU-Helpdesk - Melden Sie sich bei allen Fragen zur Campus-LMU-Benutzerkennung und dem WLAN-Angebot der LMU
-                                    </a>
-                                </li>
-                    </ul>
-                </div>
-            </div>
-            <!-- haeufig geklickt -->
-            <div class="medium-6 large-4 columns helper-margin-top-l">
-                <h2 class="header-category">ZUV-Services - häufig geklickt</h2>
-                <div class="panel" data-equalizer-watch>
-                    <ul class="list-link">
-                                <li>
-                                    <a href="/services/uebergreifende_services/kommunikation_u_presse/beratung/index.html" title="Beratung / Unterstützung in Kommunikationsfragen">
-                                        Beratung / Unterstützung in Kommunikationsfragen
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/services/it/web-onlinedienste/entwicklung_webprojekte/index.html" title="Beratung und Unterstützung sowie Entwicklung von Webprojekten mit LMU-Webdesign">
-                                        Beratung und Unterstützung sowie Entwicklung von Webprojekten mit LMU-Webdesign
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/index.html" title="Beschaffung von EDV-Geräten">
-                                        Beschaffung von EDV-Geräten
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/index.html" title="Beantragung von Erholungsurlaub">
-                                        Beantragung von Erholungsurlaub
-                                    </a>
-                                </li>
-                    </ul>
-                </div>
-            </div>
-            <!-- ZUV -->
-            <div class="medium-6 large-4 columns  helper-margin-bottom-l helper-margin-top-l">
-                <h2 class="header-category">Wie wir uns verstehen</h2>
-                <div data-equalizer-watch>
-                    <a href="http://www.uni-muenchen.de/einrichtungen/zuv/leitbild/index.html" target="_blank"><img src="https://www.serviceportal.verwaltung.uni-muenchen.de/system/assets/bilder/zuv.png" alt="zuv"></a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- / FOOTER -->
-<div class="row helper-margin-top-s">
-  <div class="small-12 large-10 large-centered columns text-center">
-    <small>
-      <a title="Impressum">Impressum</a> | <a title="Datenschutz">Datenschutz</a>
-    </small>
-  </div>
-</div>
-<!-- TOPLINK -->
-<div class="row helper-margin-top-l">
-    <div class="small-3 small-centered columns helper-textalign-center">
-        <a href="#top"><img src="https://cms-static.uni-muenchen.de/default/foundation-zuv/img/footer-top.png" alt="footer-top"></a>
-    </div>
-</div>
-<!-- / TOPLINK -->
-<br>
 </footer>
-<script src="https://cms-static.uni-muenchen.de/default/foundation-zuv/js/jquery_min.js"></script>
-<script src="https://cms-static.uni-muenchen.de/default/foundation-zuv/js/foundation_min.js"></script>
-<script src="https://cms-static.uni-muenchen.de/default/foundation-zuv/js/app.js"></script>
-<script src="https://cms-static.uni-muenchen.de/default/foundation-zuv/js/modernizr.js"></script>
-<script src="https://cms-static.uni-muenchen.de/default/foundation-zuv/js/foundation_equalizer.js"></script>
-<script src="https://cms-static.uni-muenchen.de/default/foundation-zuv/js/foundation_reveal.js"></script>
-<script src="https://cms-static.uni-muenchen.de/default/foundation-zuv/js/foundation_orbit.js"></script>
-<script src="/livesearch.js"></script>
+
+<div id="footer-js-slot">
+    <script src="https://cms-static.uni-muenchen.de/default/foundation-zuv/js/modernizr.js"></script>
+    <script src="https://cms-static.uni-muenchen.de/default/foundation-zuv/js/jquery_min.js"></script>
+    <script>
+    // Progressive Enhancement For Search Bar
+        $(document).ready( function () {
+            $("#sb-container").css("height: 50px !important; overflow: hidden");
+            $(".search-container").css('position: absolute;').hide();
+            $(".search .fi-magnifying-glass").removeClass('fi-x');
+            $(".search-nav").removeClass("active");
+            $(".toggle .fi-list").toggleClass('fi-x');
+            $('.top-bar').toggleClass('expanded');
+            //$("#togglesearch").toggle();
+        })
+    </script>
+    <script src="https://cms-static.uni-muenchen.de/default/foundation-zuv/js/foundation_min.js"></script>
+    <script src="https://cms-static.uni-muenchen.de/default/foundation-zuv/js/foundation_equalizer.js"></script>
+    <script src="https://cms-static.uni-muenchen.de/default/foundation-zuv/js/foundation_reveal.js"></script>
+    <script src="https://cms-static.uni-muenchen.de/default/foundation-zuv/js/foundation_orbit.js"></script>
+    <script id="lmujs" src="https://cms-static.uni-muenchen.de/default/foundation-zuv/js/app.js"></script>
         </div>
     </body>
 </html>
