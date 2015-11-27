@@ -76,7 +76,7 @@
         expression="not: request/HTTP_X_THEME_ENABLED | nothing" />
 
     <stylesheet title=""
-        id="++resource++lmu.theme.intranet.css/extras.css"
+        id="++resource++lmu.theme.serviceportal.css/extras.css"
         media="screen"
         rel="stylesheet"
         rendering="import"
