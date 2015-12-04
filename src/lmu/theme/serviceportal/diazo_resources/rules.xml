@@ -52,7 +52,8 @@
         <replace css:theme="#portalmessage" css:content=".portalMessage" />
         
         <replace css:theme-children="#siteheader-person" css:content-children="#user" href="/VirtualHostBase/https/www.serviceportal.verwaltung.uni-muenchen.de:443/30_zentralbereich/30zb_zuv-serviceportal/VirtualHostRoot/user_info.include" method="esi" />
-        <!--replace css:theme="a#link-in" css:content="a#link-in" href="/_include/portal-switcher.html" method="esi" /-->
+        <!--replace css:theme="a#link-in" css:content="a#link-in" href="/_include/top-bar.html" method="esi" /-->
+        <drop css:theme="a#link-in" if="$intranetuser = 'True'" />
         <replace css:theme-children=".siteheader-name" css:content-children="#user-name" />
 
         <drop css:content=".breadcrumbSeparator" />
