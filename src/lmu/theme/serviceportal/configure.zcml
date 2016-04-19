@@ -21,12 +21,12 @@
         directory="diazo_resources"
         type="theme"
         />
-
+<!--
     <browser:jbot
         directory="template_overrides"
         layer=".interfaces.ILMUServiceportalTheme"
         />
-
+-->
     <browser:resourceDirectory
         name="lmu.theme.serviceportal.css"
         directory="css"
